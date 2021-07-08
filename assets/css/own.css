@@ -1,0 +1,273 @@
+.subtitle-own {
+	color: rgb(88, 88, 88);
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.025em;
+}
+.link_own{
+    font-size: 0.95rem !important;
+    color:rgb(8, 111, 117)
+}
+.parag-own{
+    font-size: 0.95rem !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2e2e2e; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(101, 101, 101); 
+    border-radius: 4px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  input[type="submit"].icon.solo:before, input[type="reset"].icon.solo:before, input[type="button"].icon.solo:before, button.icon.solo:before, .button.icon.solo:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+    font-size: 1.95rem;
+    margin-right: 0;
+    text-align: center;
+    text-indent: 0;
+}
+
+#intro input[type="submit"], #intro input[type="reset"], #intro input[type="button"], #intro button, #intro .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #ffffff;
+    color: #ffffff !important;
+    width: 90px;
+}
+.separator{
+    padding: 0rem 0rem 1rem 0rem !important;
+    width:100%;
+    background-color:rgb(69, 69, 69);
+}
+#nav {
+    color: #ffffff;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-transition: -moz-transform 1s ease, opacity 1s ease;
+    -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+    -ms-transition: -ms-transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
+    background: rgba(255, 255, 255, 0);
+    height: 4rem;
+    line-height: 4rem;
+    margin: -4rem auto 0 auto;
+    overflow: hidden;
+    padding: 0 2rem 0 0;
+    position: relative;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    z-index: 2;
+}
+
+dfn {
+    background: transparent;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    border-bottom: dashed 1px rgba(0,0,0,0.0);
+    padding: 0 0.4em;
+    cursor: pointer;
+    font-style: normal;
+    position: relative;
+    border-radius: 10px;
+    
+  }
+  dfn::after {
+    content: attr(data-info);
+    display: inline;
+    position: absolute;
+    border-radius: 9px;
+    top: 22px; left: 0;
+    opacity: 0;
+    width: 120px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 0.5em 0.8em;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    pointer-events: none; /* This prevents the box from apearing when hovered. */
+    transition: opacity 250ms, top 250ms;
+  }
+  dfn::before {
+    /* content: '';
+    display: block;
+    position: absolute;
+    top: 12px; left: 20px;
+    opacity: 0;
+    width: 0; height: 0;
+    border: solid transparent 5px;
+    border-bottom-color: rgba(0,0,0,0.4);
+    transition: opacity 450ms, top 250ms; */
+  }
+  dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+  dfn:hover::after,
+  dfn:hover::before {opacity: 1;}
+  dfn:hover::after {top: 30px;}
+  dfn:hover::before {top: 20px;}
+
+  #intro input[type="submit"]:hover, #intro input[type="reset"]:hover, #intro input[type="button"]:hover, #intro button:hover, #intro .button:hover {
+    box-shadow: inset 0 0 0 2px #18bfef;
+    color: #18bfef !important;
+    width: 105px;
+    transition: 0.25s;
+}
+#intro input[type="submit"], #intro input[type="reset"], #intro input[type="button"], #intro button, #intro .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #ffffff;
+    color: #ffffff !important;
+    width: 90px;
+    transition: 0.25s;
+}
+.sub-own{
+  margin-bottom: 100px;
+}
+
+#intro h1 {
+  font-size: 5rem;
+  line-height: 1;
+  height: auto;
+}
+#category-container
+{
+  width:100%;
+  height: 50px;
+  /* border:solid red 1px; */
+  display: flex;
+  padding: 0px;
+}
+
+
+.cat-div
+{
+  background-color: transparent;
+  width: 33%;
+  text-align: center;
+  border: transparent 2px;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  letter-spacing: 0.075em;
+  transition: 0.2s;
+
+  padding: 5px;
+}
+
+.cat-div:hover
+{
+  background-color: #d8d8d8;  
+  transition: 0.4s;
+  letter-spacing: 0.175em;
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  .cat-div
+  {
+    background-color: transparent;
+    width: 33%;
+    text-align: center;
+    border: transparent 2px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    letter-spacing: 0.075em;
+    transition: 0.4s;
+    font-size: 2vw;
+    padding: 5px;
+  }
+  .cat-div:hover
+  {
+  background-color: #d8d8d8;  
+  transition: 0.4s;
+  letter-spacing: 0.125em;
+  cursor: pointer;
+  }
+}
+
+
+
+.cat-div.actived
+{
+  background-color: #2C3A40;
+  color:whitesmoke;
+  transition: 0.4s;
+
+}
+
+
+#main > .posts > article {
+  border-color: #eeeeee;
+  border-left-width: 0px;
+  border-style: solid;
+  border-top-width: 0px;
+  text-align: center;
+}
+
+#main > .posts > * {
+  padding: 3rem;
+  width: 50%;
+}
+
+@media
+(max-width: 750px) {
+  #main > .posts > *
+  {
+    padding: 3rem;
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 1110px) {
+  .subtitle-own
+  {
+    display:none;
+
+  }
+}
+
+.info-custom{
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1110px) {
+  .info-custom{
+    font-size: 0.65rem;
+  }
+}
+mark{
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.65rem;
+}
+
+a {
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-bottom: dotted 0px;
+  text-decoration: none;
+}
+
+#main > .post header.major > h1, #main > .post header.major h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 2rem 0 2rem 0;
+}
