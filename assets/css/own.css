@@ -271,3 +271,130 @@ a {
   line-height: 1.1;
   margin: 2rem 0 2rem 0;
 }
+
+#skills-container{
+  width: 100%;
+  /* border: 1px solid red; */
+  min-height: 50vh;
+  overflow-y: hidden;
+}
+
+.skill-separator{
+  width:33.33333%;
+  /* border: 1px solid red; */
+  float:left;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.skills{
+  margin-left: 15%;
+  margin-right: 13%;
+  font-weight: 500;
+}
+.details{
+  width: 80%;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 500;
+  /* font-size: 6px !important; */
+}
+.bar{
+  position: relative;
+  border: 1px solid #c2c2c2;
+  margin-bottom: 15px;
+  border-radius: 20px;
+
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+
+
+}
+
+.skills:not(:last-child){
+  margin-bottom: 1px;
+}
+
+/* Progress bars values */
+
+#python-bar{
+  animation:ninety-fill 2s forwards;
+}
+#js-bar{
+  animation:ninety-fill 2s forwards;
+}
+#sql-bar{
+  animation:eighty-fill 2s forwards;
+}
+#c-bar{
+  animation:seventy-fill 2s forwards;
+}
+#r-bar{
+  animation:fourty-fill 2s forwards;
+}
+#scikit-bar{
+  animation:eighty-fill 2s forwards;
+}
+#keras-bar{
+  animation:sixty-fill 2s forwards;
+}
+#pandas-bar{
+  animation:ninety-fill 2s forwards;
+}
+#plot-bar{
+  animation:ninety-fill 2s forwards;
+}
+#tableau-bar{
+  animation:seventy-fill 2s forwards;
+}
+#conda-bar{
+  animation:eighty-fill 2s forwards;
+}
+#github-bar{
+  animation:seventy-fill 2s forwards;
+}
+#google-bar{
+  animation:seventy-fill 2s forwards;
+}
+
+@keyframes ninety-fill{
+  100%{
+      width: 90%;
+      background-color: #3c5059;
+  }
+}
+@keyframes eighty-fill{
+  100%{
+      width: 80%;
+      background-color: #4b636d;
+  }
+}
+@keyframes seventy-fill{
+  100%{
+      width: 70%;
+      background-color: #516b76;
+  }
+}
+@keyframes sixty-fill{
+  100%{
+      width: 60%;
+      background-color: #688a99;
+  }
+}
+@keyframes fourty-fill{
+  100%{
+      width: 40%;
+      background-color: #7ba3b5;
+  }
+}
+
+#description{
+  width:100%;
+  /* border:1px solid red; */
+}
